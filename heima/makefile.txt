@@ -1,0 +1,29 @@
+目标: 依赖
+	命令
+
+变量=值
+$(变量) 使用变量的值
+
+$@ 目标
+$< 第一个条件
+$^ 所有条件
+
+target = main
+objects = a.o b.o c.o
+
+$(target): $(objects)
+	g++ xxxxxxxxxxxxxxxx
+
+
+%.o: %.cpp
+	g++ $< -o $@
+
+
+src = $(wildcard *.cpp)
+
+obj = $(patsubst $.cpp, %.o, $(src))
+
+伪目标
+.PHONY:clean
+clear:
+	rm $(obj) $(src)

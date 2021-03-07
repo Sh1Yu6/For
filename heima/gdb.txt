@@ -1,0 +1,38 @@
+编译时加-g
+
+set args xxxxxxxxxxxxxxxxx  
+show args
+
+run     运行
+start   下一行
+
+next:n
+step:s 进入函数体
+
+finish
+until:u
+continue:c
+
+list 显示源代码
+list file:line/func
+set listsize count
+show listsize
+
+display
+undisplay
+
+ptype
+
+break:b
+b line
+b func
+b file: func/line
+b 9 if i == 9
+
+info:i
+
+print:p
+
+disable
+enable
+delete
