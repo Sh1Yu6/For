@@ -1,5 +1,4 @@
-目标: 依赖
-	命令
+aaaaaaaaaaaaaaaaa
 
 变量=值
 $(变量) 使用变量的值
@@ -27,3 +26,4 @@ obj = $(patsubst $.cpp, %.o, $(src))
 .PHONY:clean
 clear:
 	rm $(obj) $(src)
+abc

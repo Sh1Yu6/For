@@ -1,0 +1,21 @@
+
+-I头文件路径 -L库文件路径
+-l库名
+static library
+    g++ -c test.cpp -o test.o
+    ar rcs libtest.a test.o
+    // r更新 c创建 s建立索引
+    
+shared library
+
+    g++ -fpic -c test.cpp -o test.o
+    -fpic 创建于地址无关的编译程序
+
+    g++ -shared test.o -o libtest.so
+
+    ldd 查看可执行文件的依赖
+    ldd 执行的时候根据动态库的路径进行加载, 与编译的时候指定的-L无关
+
+LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:路径
+

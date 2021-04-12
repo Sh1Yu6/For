@@ -6,7 +6,7 @@
 #        Author: Sh1Yu6
 #   Description: ---
 #        Create: 2021-03-22 15:27:16
-# Last Modified: 2021-03-26 07:12:37
+# Last Modified: 2021-03-28 16:47:03
 #***********************************************/
 #include <iostream>
 #include <algorithm>
@@ -116,13 +116,13 @@ int partition(T* arr, int left, int right){
     int i = left;
     int j = right;
     while(i < j){
-        while(i < j && arr[j] >= v){
+        while(i < j && arr[j] > v){
             --j;
         }
         if( i < j ){
             arr[i++] = arr[j];
         }
-        while(i < j && arr[i] <= v){
+        while(i < j && arr[i] < v){
             ++i;
         }
         if( i < j ){
@@ -158,7 +158,7 @@ void quickSort(T* arr, int n){
 
 int main(int argc, char *argv[])
 {
-    int n = 10;
+    int n = 3;
     auto arr = SortTestHelper::generateRandomArray(n, 0, n);
     auto arr2 = SortTestHelper::copyArray(arr, n);
     auto arr3 = SortTestHelper::copyArray(arr, n);
