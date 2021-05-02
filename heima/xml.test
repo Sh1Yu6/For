@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8">
+<china>
+    <city>
+        <name>beijing</name>
+        <area>123123123</area>
+        <population>123124123</population>
+        
+    </city>
+    
+    <city>
+        <name>dongjing</name>
+        <area>123123123</area>
+        <population>123124123</population>
+    </city>
+</china>

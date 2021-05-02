@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<China>
+	<City>
+		<Name isbig="true">北京</Name>
+		<Area>1.641万平方千米</Area>
+		<Population>2200万</Population>
+	</City>
+	<City>
+		<Name isbig="false">石家庄</Name>
+		<Area>15848平方千米</Area>
+		<Population>107万</Population>
+	</City>
+</China>

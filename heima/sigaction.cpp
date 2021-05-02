@@ -6,7 +6,7 @@
 #        Author: Sh1Yu6
 #   Description: ---
 #        Create: 2021-04-14 13:13:28
-# Last Modified: 2021-04-14 13:29:31
+# Last Modified: 2021-04-29 19:03:31
 #***********************************************/
 #include <csignal>
 #include <iostream>
@@ -24,10 +24,12 @@ void func(int signo){
 }
 int main(int argc, char *argv[])
 {
+    sigset_t a;
     struct sigaction s;
     s.sa_handler = func;    // 信号处理函数
     sigemptyset(&s.sa_mask); // 阻塞的信号
     sigaction(SIGINT, &s, nullptr);
+
     while(true){
         sleep(1);
     }

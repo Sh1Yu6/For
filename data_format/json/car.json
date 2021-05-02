@@ -1,0 +1,10 @@
+{
+	"奔驰":	{
+		"factory":	"一汽大众",
+		"last":	31,
+		"price":	83,
+		"sell":	49,
+		"sum":	80,
+		"other":	[124, "hello, world", false]
+	}
+}
